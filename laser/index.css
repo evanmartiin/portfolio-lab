@@ -44,4 +44,63 @@ text {
     transform-origin: center;
     bottom: -700px;
     width: 2500px;
+    pointer-events: none;
+}
+
+.info {
+    position: absolute;
+    width: 100vw;
+    font-size: 15px !important;
+    bottom: 10px;
+    z-index: 1;
+    text-align: center;
+    color: rgb(117, 117, 117);
+    text-transform: none;
+}
+
+.info a {
+    color: white;
+    position: relative;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.info a:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 51%;
+    margin-left: -1%;
+    height: 20px;
+    background-color: rgb(117, 117, 117);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.info a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 51%;
+    margin-right: -1%;
+    height: 20px;
+    background-color: rgb(117, 117, 117);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.info a:hover {
+    color: black;
+}
+
+.info a:hover::before {
+    width: 0%;
+    margin-right: 51%;
+}
+
+.info a:hover::after {
+    width: 0%;
+    margin-left: 51%;
 }
