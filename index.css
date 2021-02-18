@@ -215,6 +215,16 @@ button:active, button:visited {
     transform: scale(0.3);
 }
 
+.info-blob {
+    position: absolute;
+    top: 35px;
+    right: 45px;
+    width: 0px;
+    height: 0px;
+    transition: 4s;
+    z-index: 1;
+}
+
 .background {
     width: 100vw;
     height: 100vh;
