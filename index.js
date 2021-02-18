@@ -73,8 +73,8 @@ function info(status) {
     } else if (status === 'off') {
         var infoDOM = document.getElementsByClassName('info-blob')[0];
         infoDOM.style.transition = '1s';
-        infoDOM.style.width = '0px';
-        infoDOM.style.height = '0px';
+        infoDOM.style.width = '0vw';
+        infoDOM.style.height = '0vh';
         infoDOM.style.top = '35px';
         infoDOM.style.right = '45px';
         var infoContent = document.getElementsByClassName('info-content')[0];

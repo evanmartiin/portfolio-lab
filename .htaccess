@@ -1,7 +1,0 @@
-Options -Indexes
-Options -Multiviews
-Options +FollowSymLinks
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^lab.evanmartin.fr [NC]
-RewriteRule ^(.*) https://www.evanmartin.fr/$1 [L,R=301,QSA]
-RewriteRule ^/?$ /index.html [L]

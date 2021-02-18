@@ -217,21 +217,14 @@ button:active, button:visited {
 
 .info-blob {
     position: absolute;
-    /* top: 35px;
+    top: 35px;
     right: 45px;
     width: 0px;
-    height: 0px; */
+    height: 0px;
     transition: 4s;
     z-index: 1;
-    opacity: 0.9;
+    opacity: 0.8;
     backdrop-filter: blur(2px);
-
-
-
-    width: 1000vw;
-    height: 1000vh;
-    top: -400vh;
-    right: -400vw;
 }
 
 .info-content {
@@ -246,12 +239,23 @@ button:active, button:visited {
     align-items: center;
     justify-content: center;
     transition: 1s;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .info-content h2 {
     color: white;
     font-family: 'Righteous', cursive;
     font-size: 60px;
+}
+
+.info-content p {
+    color: white;
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+    width: 80vw;
+    text-align: center;
+    margin-bottom: 5vh;
 }
 
 .info-content button {
