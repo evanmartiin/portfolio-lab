@@ -254,6 +254,17 @@ button:active, button:visited {
     font-size: 60px;
 }
 
+.info-content button {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.info-content button:hover {
+    margin-top: 3px;
+    margin-right: 7.5px;
+}
+
 .background {
     width: 100vw;
     height: 100vh;
