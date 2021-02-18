@@ -27,6 +27,7 @@ canvas {
 
 svg {
     height: 15vh;
+    margin-top: -10vh;
 }
 
 path {
@@ -41,6 +42,6 @@ text {
 .barriere {
     position: absolute;
     transform-origin: center;
-    bottom: -800px;
+    bottom: -700px;
     width: 2500px;
 }
