@@ -59,10 +59,26 @@ onmousemove = e => {
     }
 }
 
-function info() {
-    var infoDOM = document.getElementsByClassName('info-blob')[0];
-    infoDOM.style.width = '1000vw';
-    infoDOM.style.height = '1000vh';
-    infoDOM.style.top = '-400vh';
-    infoDOM.style.right = '-400vw';
+function info(status) {
+    if (status === 'on') {
+        var infoDOM = document.getElementsByClassName('info-blob')[0];
+        infoDOM.style.transition = '4s';
+        infoDOM.style.width = '1000vw';
+        infoDOM.style.height = '1000vh';
+        infoDOM.style.top = '-400vh';
+        infoDOM.style.right = '-400vw';
+        var infoContent = document.getElementsByClassName('info-content')[0];
+        infoContent.style.opacity = '1';
+        infoContent.style.pointerEvents = 'all';
+    } else if (status === 'off') {
+        var infoDOM = document.getElementsByClassName('info-blob')[0];
+        infoDOM.style.transition = '1s';
+        infoDOM.style.width = '0px';
+        infoDOM.style.height = '0px';
+        infoDOM.style.top = '35px';
+        infoDOM.style.right = '45px';
+        var infoContent = document.getElementsByClassName('info-content')[0];
+        infoContent.style.opacity = '0';
+        infoContent.style.pointerEvents = 'none';
+    }
 }

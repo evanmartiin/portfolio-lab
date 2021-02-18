@@ -16,7 +16,7 @@
     <a href="https://www.evanmartin.fr/">Retour au portfolio</a>
   </div>
 
-  <div class="info" onclick="info()">
+  <div class="info" onclick="info('on')">
     <svg xmlns="http://www.w3.org/2000/svg" height="160" width="160" version="1.0">
       <g fill="rgb(117, 117, 117)">
         <path
@@ -28,8 +28,14 @@
       </g>
     </svg>
   </div>
+
   <div class="info-blob">
     <img src="assets/blob.svg">
+  </div>
+
+  <div class="info-content">
+    <h2>C'est quoi ?</h2>
+    <button onclick="info('off')">X</button>
   </div>
 
   <div class="content">
