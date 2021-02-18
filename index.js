@@ -1,7 +1,7 @@
 var creations = ['lines', 'laser'];
 
 function randomCreation() {
-    window.open('/LAB/' + creations[Math.floor(Math.random() * creations.length)], '_blank');
+    window.open('/' + creations[Math.floor(Math.random() * creations.length)], '_blank');
 }
 
 
