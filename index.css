@@ -183,6 +183,38 @@ button:active, button:visited {
     color: white;
 }
 
+.info {
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    background-image: url(assets/blob.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    overflow: visible;
+}
+
+.info:hover {
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.info g {
+    transition: 0.5s;
+}
+
+.info:hover g {
+    fill: white;
+}
+
+.info svg {
+    transform: scale(0.3);
+}
+
 .background {
     width: 100vw;
     height: 100vh;
