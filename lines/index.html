@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <title>Evan Martin — Portfolio</title>
   <meta charset="utf-8">
@@ -10,26 +11,28 @@
 </head>
 
 <body>
-<script type="text/javascript" src="processing.js"></script>
+  <script type="text/javascript" src="processing.js"></script>
 
-<div class="close" onclick="window.close()">×</div>
+  <div class="close" onclick="if (window.close()) {window.close()} else {window.location.href = 'https://lab.evanmartin.fr/'};">×</div>
 
-<div class="info">
-  Réalisé en Février 2021 — Technologie(s) utilisée(s) : <a target="_blank" href="https://processing.org/">Processing</a>
-</div>
+  <div class="info">
+    Réalisé en Février 2021 — Technologie(s) utilisée(s) : <a target="_blank"
+      href="https://processing.org/">Processing</a>
+  </div>
 
-<svg viewBox="0 0 500 200">
-  <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
-  <text width="500">
-    <textPath xlink:href="#curve">
-      Le chef-d'œuvre
-    </textPath>
-  </text>
-</svg>
+  <svg viewBox="0 0 500 200">
+    <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+    <text width="500">
+      <textPath xlink:href="#curve">
+        Broken lines
+      </textPath>
+    </text>
+  </svg>
 
-<canvas data-processing-sources="line.pde"></canvas>
+  <canvas data-processing-sources="line.pde"></canvas>
 
-<img class="barriere" src="barriere.png">
+  <img class="barriere" src="barriere.png">
 
 </body>
+
 </html>

@@ -62,6 +62,8 @@ onmousemove = e => {
 function info(status) {
     if (status === 'on') {
         var infoDOM = document.getElementsByClassName('info-blob')[0];
+        var buttonDOM = document.getElementsByClassName('info')[0];
+        buttonDOM.style.display = 'none';
         infoDOM.style.transition = '4s';
         infoDOM.style.width = '1000vw';
         infoDOM.style.height = '1000vh';
@@ -72,6 +74,8 @@ function info(status) {
         infoContent.style.pointerEvents = 'all';
     } else if (status === 'off') {
         var infoDOM = document.getElementsByClassName('info-blob')[0];
+        var buttonDOM = document.getElementsByClassName('info')[0];
+        buttonDOM.style.display = 'flex';
         infoDOM.style.transition = '1s';
         infoDOM.style.width = '0vw';
         infoDOM.style.height = '0vh';
