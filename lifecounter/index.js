@@ -44,6 +44,7 @@ function go() {
 
     document.getElementsByClassName("intro")[0].style.display = "block";
     document.getElementsByClassName("scroll-container")[0].style.display = "block";
+    document.getElementsByTagName("footer")[0].style.opacity = "1";
     var cards = document.getElementsByClassName("info");
     for (var i = 0; i < cards.length; i++) {
       cards[i].style.display = "flex";

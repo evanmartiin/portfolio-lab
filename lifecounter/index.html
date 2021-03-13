@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Life Counter</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/png" href="../assets/tete-crop.png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
   </head>
   <body>
     <div class="container">
         <div class="header">
-            <canvas id="gradient"></canvas>
+            <canvas id="gradient-header"></canvas>
             <h1>Life Counter</h1>
             <h2>Quand es-tu né ?</h2>
             <div class="ui form">
@@ -116,7 +116,31 @@
             <div class="emoji reveal-1"><marquee behavior="scroll" direction="left" scrollamount="2" width="100vw">&#128663;&#128663;&#128663;&#128663;&#128663;&#128663;&#128663;&#128663;&#128663;&#128663;&#128663;&#128663;&#128663;&#128663;&#128663;&#128663;&#128663;&#128663;&#128663;&#128663;&#128663;&#128663;&#128663;&#128663;&#128663;&#128663;&#128663;&#128663;&#128663;&#128663;</marquee></div>
         </div>
 
-        <footer></footer>
+        <footer>
+            <div>
+                <a href="https://github.com/evanmartiin/" target="_blank">
+                    <button class="ui labeled icon button">
+                        <i class="github icon"></i>
+                        evanmartiin
+                    </button>
+                </a>
+                <a href="https://www.evanmartin.fr/" target="_blank">
+                    <button class="ui labeled icon button">
+                        <i class="code icon"></i>
+                        portfolio
+                    </button>
+                </a>
+            </div>
+            <div class="libraries">
+                <div class="ui right pointing label">
+                  Codé avec
+                </div>
+                <div class="ui buttons">
+                    <button class="ui button" onclick="window.open('https://semantic-ui.com/', '_blank');">Semantic UI</button>
+                    <button class="ui button" onclick="window.open('https://sarcadass.github.io/granim.js/', '_blank');">Granim.js</button>
+                  </div>
+            </div>
+        </footer>
     </div>
 
 
@@ -124,7 +148,7 @@
     <script type="text/javascript" src="granim.min.js"></script>
     <script>
         var granimInstance = new Granim({
-            element: '#gradient',
+            element: '#gradient-header',
             direction: 'diagonal',
             isPausedWhenNotInView: true,
             states : {

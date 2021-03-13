@@ -29,7 +29,7 @@ h2 {
     z-index: 1;
 }
 
-#gradient {
+#gradient-header {
     width: 300vh;
     height: 200vh;
     position: absolute;
@@ -181,9 +181,17 @@ h2 {
   transition-delay: 0.2s;
 }
 
-/* footer {
-    height: 10vw;
-} */
+footer {
+  height: 200px;
+  width: 100vw;
+  overflow: hidden;
+  opacity: 0;
+  margin-top: 10vw;
+  display: flex!important;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
 
 @media screen and (max-width: 700px) {
     h1 {
