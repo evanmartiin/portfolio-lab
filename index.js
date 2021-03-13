@@ -1,4 +1,4 @@
-var creations = ['lines', 'laser'];
+var creations = ['lines', 'laser', 'lifecounter'];
 
 function randomCreation() {
     window.open('/' + creations[Math.floor(Math.random() * creations.length)], '_blank');
