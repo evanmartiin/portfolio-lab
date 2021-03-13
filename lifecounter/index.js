@@ -1,4 +1,3 @@
-var naissance, deces, guerre;
 var timeout;
 
 function go() {
@@ -32,15 +31,26 @@ function go() {
     else guerre = 0;
     if (diffDays < 10585) twingo = diffDays * 378 + secsSince * (378 / 86400);
     else twingo = 4016493 + secsSince * (378 / 86400);
+    arbres = diffDays * 219178 + secsSince * (219178 / 86400);
+    papier = diffDays * 0.1945 + secsSince * (0.1945 / 86400);
+    bpm = diffDays * 100000 + secsSince * (100000 / 86400);
+    jo = (new Date().getFullYear() - (new Date().getFullYear()%4) - annee) / 4 + 1;
+    if (annee < 1917) jo--;
+    if (annee < 1941) jo--;
+    if (annee < 1945) jo--;
+    if (diffDays < 24090) bigmac = diffDays * 2505600 + secsSince * (2505600 / 86400);
+    else bigmac = 60359904000 + secsSince * (2505600 / 86400);
 
-    document.getElementsByClassName("naissance")[0].innerHTML = addCommas(
-      naissance
-    );
+    document.getElementsByClassName("jours")[0].innerHTML = diffDays;
+    document.getElementsByClassName("naissance")[0].innerHTML = addCommas(naissance);
     document.getElementsByClassName("deces")[0].innerHTML = addCommas(deces);
     document.getElementsByClassName("guerre")[0].innerHTML = guerre;
-    document.getElementsByClassName("twingo")[0].innerHTML = addCommas(
-      Math.floor(twingo)
-    );
+    document.getElementsByClassName("twingo")[0].innerHTML = addCommas(Math.floor(twingo));
+    document.getElementsByClassName("arbres")[0].innerHTML = addCommas(arbres);
+    document.getElementsByClassName("papier")[0].innerHTML = addCommas(Math.floor(papier));
+    document.getElementsByClassName("bpm")[0].innerHTML = addCommas(Math.floor(bpm));
+    document.getElementsByClassName("jo")[0].innerHTML = Math.floor(jo);
+    document.getElementsByClassName("bigmac")[0].innerHTML = addCommas(Math.floor(bigmac));
 
     document.getElementsByClassName("intro")[0].style.display = "block";
     document.getElementsByClassName("scroll-container")[0].style.display = "block";
@@ -69,16 +79,18 @@ function timeUpdate() {
   naissance += 380000 / 864000;
   deces += 160000 / 864000;
   twingo += 378 / 864000;
+  arbres += 219178 / 864000;
+  papier += 0.1945 / 864000;
+  bpm += 100000 / 864000;
+  bigmac += 2505600 / 864000;
 
-  document.getElementsByClassName("naissance")[0].innerHTML = addCommas(
-    Math.floor(naissance)
-  );
-  document.getElementsByClassName("deces")[0].innerHTML = addCommas(
-    Math.floor(deces)
-  );
-  document.getElementsByClassName("twingo")[0].innerHTML = addCommas(
-    Math.floor(twingo)
-  );
+  document.getElementsByClassName("naissance")[0].innerHTML = addCommas(Math.floor(naissance));
+  document.getElementsByClassName("deces")[0].innerHTML = addCommas(Math.floor(deces));
+  document.getElementsByClassName("twingo")[0].innerHTML = addCommas(Math.floor(twingo));
+  document.getElementsByClassName("arbres")[0].innerHTML = addCommas(Math.floor(arbres));
+  document.getElementsByClassName("papier")[0].innerHTML = addCommas(Math.floor(papier));
+  document.getElementsByClassName("bpm")[0].innerHTML = addCommas(Math.floor(bpm));
+  document.getElementsByClassName("bigmac")[0].innerHTML = addCommas(Math.floor(bigmac));
 
   timeout = setTimeout(() => {
     timeUpdate();
