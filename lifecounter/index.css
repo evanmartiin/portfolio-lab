@@ -245,4 +245,8 @@ footer {
     bottom: 100px;
     right: 20px;
   }
+
+  footer {
+    margin-bottom: 30vw;
+  }
 }
