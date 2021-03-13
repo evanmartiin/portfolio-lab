@@ -1,44 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 .container {
-    scroll-behavior: smooth;
-    overflow-x: hidden!important;
-    width: 100vw!important;
-    height: 100vh!important;
-    position: fixed;
+  scroll-behavior: smooth;
+  overflow-x: hidden!important;
+  width: 100vw!important;
+  height: 100vh!important;
+  position: fixed;
 }
 
 .header {
-    width: 100vw;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 h1 {
-    font-family: 'Caveat', cursive!important;
-    z-index: 1;
-    font-size: 150px!important;
+  font-family: 'Caveat', cursive!important;
+  z-index: 1;
+  font-size: 150px!important;
 }
 
 h2 {
-    margin-top: 100px!important;
-    z-index: 1;
+  margin-top: 100px!important;
+  z-index: 1;
 }
 
 #gradient-header {
-    width: 300vh;
-    height: 200vh;
-    position: absolute;
-    top: -130vh;
-    left: 50vw;
-    border-radius: 50%;
-    opacity: 0.3;
-    transform: translateX(-50%);
-    box-shadow: 0px 1px 20px black;
+  width: 300vh;
+  height: 200vh;
+  position: absolute;
+  top: -130vh;
+  left: 50vw;
+  border-radius: 50%;
+  opacity: 0.3;
+  transform: translateX(-50%);
+  box-shadow: 0px 1px 20px black;
 }
 
 .form {
@@ -47,48 +47,49 @@ h2 {
 }
 
 .scroll-container {
-    display: none;
+  display: none;
+  transition: .5s;
 }
 
 .scroll {
-    width: 50px;
-    height: 100px;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    background: black;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
+  width: 50px;
+  height: 100px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background: black;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 
 .scroll i {
-    width: 30px!important;
-    height: 30px!important;
-    margin: 0!important;
-    font-size: 30px!important;
-    display: flex!important;
-    align-items: center;
-    justify-content: center;
-    animation: scroll 1s ease-out infinite;
-    color: white;
+  width: 30px!important;
+  height: 30px!important;
+  margin: 0!important;
+  font-size: 30px!important;
+  display: flex!important;
+  align-items: center;
+  justify-content: center;
+  animation: scroll 1s ease-out infinite;
+  color: white;
 }
 
 @keyframes scroll {
-    0% {
-        padding-top: 0px;
-        padding-bottom: 20px;
-    }
-    50% {
-        padding-top: 20px;
-        padding-bottom: 0px;
-    }
-    100% {
-        padding-top: 0px;
-        padding-bottom: 20px;
-    }
+  0% {
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+  50% {
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+  100% {
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
 }
 
 .negative {
@@ -124,11 +125,11 @@ h2 {
 }
 
 .info p {
-    margin: 0;
-    padding: 0;
-    margin-top: -1vw;
-    margin-bottom: 2vw;
-    font-size: 2vw;
+  margin: 0;
+  padding: 0;
+  margin-top: -1vw;
+  margin-bottom: 2vw;
+  font-size: 2vw;
 }
 
 .emoji {
@@ -187,55 +188,61 @@ footer {
   overflow: hidden;
   opacity: 0;
   margin-top: 10vw;
+  margin-bottom: 10vw;
   display: flex!important;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
+.libraries {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.libraries .pointing {
+  margin-bottom: 20px!important;
+}
+
 @media screen and (max-width: 700px) {
-    h1 {
-        font-size: 60px!important;
-    }
+  h1 {
+    font-size: 60px!important;
+  }
 
-    .fields {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+  .fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .fields .field, .fields button {
-        margin-bottom: 10px!important;
-    }
+  .fields .field, .fields button {
+    margin-bottom: 10px!important;
+  }
 
-    .info h3 {
-        font-size: 10vw;
-    }
+  .info h3 {
+    font-size: 10vw;
+  }
 
-    .info p {
-        font-size: 6vw;
-    }
+  .info p {
+    font-size: 6vw;
+  }
 
-    .emoji {
-        width: 60vw;
-    }
+  .emoji {
+    width: 60vw;
+  }
 
-    .emoji marquee {
-      display: none;
-    }
+  .emoji marquee {
+    display: none;
+  }
 
-    .scroll {
-        width: 50px;
-        height: 100px;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background: black;
-        border-radius: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 1;
-    }
+  .scroll {
+    width: 40px;
+    height: 80px;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+  }
 }
