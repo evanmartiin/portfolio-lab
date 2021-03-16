@@ -25,19 +25,27 @@ function go() {
       new Date().getSeconds();
 
     naissance = diffDays * 380000 + secsSince * (380000 / 86400);
+
     deces = diffDays * 160000 + secsSince * (160000 / 86400);
+
     if (annee < 1919) guerre = 2;
     else if (annee < 1946) guerre = 1;
     else guerre = 0;
+
     if (diffDays < 10585) twingo = diffDays * 378 + secsSince * (378 / 86400);
     else twingo = 4016493 + secsSince * (378 / 86400);
+
     arbres = diffDays * 219178 + secsSince * (219178 / 86400);
+
     papier = diffDays * 0.1945 + secsSince * (0.1945 / 86400);
+
     bpm = diffDays * 100000 + secsSince * (100000 / 86400);
+
     jo = (new Date().getFullYear() - (new Date().getFullYear()%4) - annee) / 4 + 1;
     if (annee < 1917) jo--;
     if (annee < 1941) jo--;
     if (annee < 1945) jo--;
+    
     if (diffDays < 24090) bigmac = diffDays * 2505600 + secsSince * (2505600 / 86400);
     else bigmac = 60359904000 + secsSince * (2505600 / 86400);
 

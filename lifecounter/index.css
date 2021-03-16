@@ -44,6 +44,7 @@ h2 {
 .form {
   display: flex;
   justify-content: center;
+  width: 80vw;
 }
 
 .scroll-container {
@@ -130,6 +131,8 @@ h2 {
   margin-top: -1vw;
   margin-bottom: 2vw;
   font-size: 2vw;
+  width: 70vw;
+  text-align: center;
 }
 
 .emoji {
