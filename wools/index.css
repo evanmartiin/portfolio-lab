@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    font-size: 47px;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+svg {
+    height: 15vh;
+    margin-top: -10vh;
+}
+
+path {
+    fill: transparent;
+}
+  
+text {
+    fill: black;
+    text-shadow: 0px 1px 4px black;
+    font-size: 60px;
+}
+
+.barriere {
+    position: absolute;
+    transform-origin: center;
+    bottom: -750px;
+    width: 2500px;
+    pointer-events: none;
+}
+
+.info {
+    position: absolute;
+    width: 100vw;
+    font-size: 15px !important;
+    bottom: 10px;
+    z-index: 1;
+    text-align: center;
+    color: rgb(117, 117, 117);
+    text-transform: none;
+    text-shadow: 0 0 10px white;;
+}
+
+.info a {
+    color: white;
+    position: relative;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.info a:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 51%;
+    margin-left: -1%;
+    height: 20px;
+    background-color: rgb(117, 117, 117);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.info a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 51%;
+    margin-right: -1%;
+    height: 20px;
+    background-color: rgb(117, 117, 117);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.info a:hover {
+    color: black;
+}
+
+.info a:hover::before {
+    width: 0%;
+    margin-right: 51%;
+}
+
+.info a:hover::after {
+    width: 0%;
+    margin-left: 51%;
+}
+
+
+.close {
+    position: absolute;
+    top: 50px;
+    z-index: 10;
+    left: 50px;
+    font-family: 'Righteous', cursive;
+    margin-right: 10px;
+    color: white;
+    border: none;
+    font-size: 60px;
+    padding: 10px;
+    line-height: 40px;
+    background-color: rgb(117, 117, 117);
+    box-shadow: 1px 0 1px rgb(63, 63, 63), 0 1px 1px rgb(163, 163, 163), 
+    2px 1px 1px rgb(63, 63, 63), 1px 2px 1px rgb(163, 163, 163), 
+    3px 2px 1px rgb(63, 63, 63), 2px 3px 1px rgb(163, 163, 163), 
+    4px 3px 1px rgb(63, 63, 63), 3px 4px 1px rgb(163, 163, 163), 
+    5px 4px 1px rgb(63, 63, 63), 4px 5px 1px rgb(163, 163, 163), 
+    6px 5px 1px rgb(63, 63, 63), 5px 6px 1px rgb(163, 163, 163), 
+    7px 6px 1px rgb(63, 63, 63), 6px 7px 1px rgb(163, 163, 163), 
+    8px 7px 1px rgb(63, 63, 63), 7px 8px 1px rgb(163, 163, 163), 
+    9px 8px 1px rgb(63, 63, 63), 8px 9px 1px rgb(163, 163, 163), 
+    10px 9px 1px rgb(63, 63, 63);
+}
+
+.close:hover, .close:focus {
+    outline: none;
+    cursor: pointer;
+    box-shadow: 1px 0 1px rgb(63, 63, 63), 0 1px 1px rgb(163, 163, 163), 
+    2px 1px 1px rgb(63, 63, 63), 1px 2px 1px rgb(163, 163, 163), 
+    3px 2px 1px rgb(63, 63, 63), 2px 3px 1px rgb(163, 163, 163), 
+    4px 3px 1px rgb(63, 63, 63), 3px 4px 1px rgb(163, 163, 163), 
+    5px 4px 1px rgb(63, 63, 63), 4px 5px 1px rgb(163, 163, 163), 
+    6px 5px 1px rgb(63, 63, 63), 5px 6px 1px rgb(163, 163, 163), 
+    7px 6px 1px rgb(63, 63, 63);
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.close:active, .close:visited {
+    outline: none;
+    margin-top: 6px;
+    margin-left: 6px;
+    box-shadow: 1px 0 1px rgb(63, 63, 63), 0 1px 1px rgb(163, 163, 163), 
+    2px 1px 1px rgb(63, 63, 63), 1px 2px 1px rgb(163, 163, 163), 
+    3px 2px 1px rgb(63, 63, 63), 2px 3px 1px rgb(163, 163, 163), 
+    4px 3px 1px rgb(63, 63, 63);
+}
